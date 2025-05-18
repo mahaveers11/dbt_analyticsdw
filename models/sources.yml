@@ -1,0 +1,13 @@
+sources:
+  - name: dbt_analyticsdw
+    description: This is a replica of a Postgre datbase used by our app
+    database: raw
+    schema: jaffle_shop
+    tables:
+      - name: customers
+        description: one record per customer
+      - name: orders
+        description: one record per order. Includes cancelled and deleted order.
+
+        
+  
